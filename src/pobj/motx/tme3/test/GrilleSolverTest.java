@@ -1,5 +1,6 @@
 package pobj.motx.tme3.test;
 import pobj.motx.tme3.*;
+import pobj.motx.tme3.adapt.MotX;
 
 import org.junit.jupiter.api.Test;
 
@@ -8,9 +9,7 @@ import pobj.motx.tme1.GrilleLoader;
 import pobj.motx.tme2.Dictionnaire;
 import pobj.motx.tme2.GrillePlaces;
 import pobj.motx.tme3.csp.CSPSolver;
-import pobj.motx.tme3.csp.GrilleContrainte;
-import pobj.motx.tme3.csp.ICSP;
-import pobj.motx.tme3.csp.adapt.MotX;
+
 
 public class GrilleSolverTest {
 
