@@ -1,5 +1,5 @@
 package pobj.motx.tme3.csp;
-
+import pobj.motx.tme3.*;
 public class CSPSolver {
 
 	public ICSP solve(ICSP problem) {

@@ -1,5 +1,5 @@
 package pobj.motx.tme3.test;
-
+import pobj.motx.tme3.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -11,9 +11,9 @@ import pobj.motx.tme1.Grille;
 import pobj.motx.tme1.GrilleLoader;
 import pobj.motx.tme2.Dictionnaire;
 import pobj.motx.tme2.GrillePlaces;
-import pobj.motx.tme3.CroixContrainte;
-import pobj.motx.tme3.GrilleContrainte;
-import pobj.motx.tme3.IContrainte;
+import pobj.motx.tme3.csp.CroixContrainte;
+import pobj.motx.tme3.csp.GrilleContrainte;
+import pobj.motx.tme3.csp.IContrainte;
 
 public class GrilleContrainteTest1 {
 
@@ -99,10 +99,11 @@ public class GrilleContrainteTest1 {
 	
 	@Test
 	public void testEnonce() {
-
+		
 		Dictionnaire gut = Dictionnaire.loadDictionnaire("data/frgut.txt");
 		Grille gr = GrilleLoader.loadGrille("data/enonce.grl");
-
+		
+		
 		assertEquals(16, gr.nbCol());
 		assertEquals(12, gr.nbLig());
 
@@ -111,7 +112,7 @@ public class GrilleContrainteTest1 {
 		GrillePlaces grille = new GrillePlaces(gr);
 
 		GrilleContrainte gp = new GrilleContrainte(grille, gut);
-
+		
 		assertTrue(!gp.isDead());
 
 		int[][] expected = { {0,1,8,0},

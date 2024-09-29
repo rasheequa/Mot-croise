@@ -30,8 +30,10 @@ public class GrillePotentiel {
 		}
 		
 		
-		
 	}
+	
+	public GrillePlaces getGrille() { return grille;}
+	public Dictionnaire getDico() { return dico;}
 	
 	public List<Dictionnaire> getMotsPot(){ return motsPot;}
 	

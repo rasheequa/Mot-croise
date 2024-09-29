@@ -1,4 +1,5 @@
 package pobj.motx.tme3.test;
+import pobj.motx.tme3.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,8 +9,6 @@ import pobj.motx.tme1.Grille;
 import pobj.motx.tme1.GrilleLoader;
 import pobj.motx.tme2.Dictionnaire;
 import pobj.motx.tme2.GrillePlaces;
-import pobj.motx.tme3.GrilleContrainte;
-
 import static pobj.motx.tme2.test.GrillePotentielTest.testNombrePot;
 
 public class GrilleContrainteTest3 {

@@ -72,7 +72,6 @@ public class GrillePlaces {
 	}
 	
 	public int getNbHorizontal() {
-		System.out.println(nbHorizontal);
 		return nbHorizontal;
 	}
 	

@@ -112,5 +112,34 @@ public class Dictionnaire {
 		mots = cible;
 		return cpt;
 	}
+	 
+	 public int filtreParEnsemble(EnsembleLettre e,int i) {
+			int cpt = 0;
+			List<String> newListe = new ArrayList<String>();
+			for(String s : mots) {
+				if(e.contains(s.charAt(i)) ) {
+					newListe.add(s);
+				}
+				else {
+					cpt++;
+				}
+			}
+			mots=newListe;
+			
+			return cpt; 
+		}
+	 
+	public EnsembleLettre getLettresPossibles(int c) {
+		EnsembleLettre l1 = new EnsembleLettre();
+		for(int i=0; i<size();i++) {
+			l1.add(get(i).charAt(c));		
+		}
+		return l1;
+	}
+		
+	 
+	 public List<String> getMots(){ return mots; }
+	 
+
 	
 }
